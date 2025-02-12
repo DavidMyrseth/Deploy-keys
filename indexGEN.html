@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parooli generaator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Juhuslike paroolide generaator</h1>
+    <div class="result">
+        <span>Sinu parool:</span>
+        <span id="password">******</span>
+    </div>
+    <div class="option">
+        <label for="use-numbers">Kasutage numbreid</label>
+        <input type="checkbox" id="use-numbers">
+    </div>
+    <div class="option">
+        <label for="use-uppercase-letters">Kasutage suuri tähti</label>
+        <input type="checkbox" id="use-uppercase-letters">
+    </div>
+    <div class="option">
+        <label for="use-special-symbols">Kasutage erimärke</label>
+        <input type="checkbox" id="use-special-symbols">
+    </div>
+    <div class="option">
+        <label for="password-length">Parooli pikkus</label>
+        <input type="number" id="password-length" min="6" max="120" value="12">
+    </div>
+    <button id="generate-btn">Genereeri parool</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
