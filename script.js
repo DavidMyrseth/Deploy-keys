@@ -32,7 +32,17 @@ function copyToClipboard() {
 }
 
 // Event listeners for buttons
+function PasswordSecurity(password) {
+    const securityMessage = document.getElementById('security-message');
 
+    if (password.length < 8) {
+        securityMessage.textContent = "Nõrk parool";
+        securityMessage.style.color = "red";
+    } else {
+        securityMessage.textContent = "Hea parool";
+        securityMessage.style.color = "green";
+    }
+}
 //
 document.getElementById('generate-btn').addEventListener('click', function() {
     const passwordLength = parseInt(document.getElementById('password-length').value);
@@ -47,6 +57,9 @@ document.getElementById('generate-btn').addEventListener('click', function() {
 
     const password = generatePassword(passwordLength, useNumbers, useUppercase, useSpecialChars);
     document.getElementById('password').textContent = password;
+
+    PasswordSecurity(password);
 });
 
 document.getElementById('copy-btn').addEventListener('click', copyToClipboard);
+
