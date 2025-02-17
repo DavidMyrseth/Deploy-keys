@@ -80,5 +80,31 @@ input[type="number"] {
 }
 
 #copy-btn:hover {
-    background-color: #f39c12;
+    background-color: #000066;
+}
+
+.instruction {
+    background-color: #f4f4f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.instruction h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #cc3399;
+}
+
+.instruction ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.instruction li {
+    font-size: 16px;
+    color: #555;
 }
