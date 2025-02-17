@@ -24,14 +24,16 @@ function copyToClipboard() {
     const passwordText = document.getElementById('password').textContent;
     navigator.clipboard.writeText(passwordText)
         .then(() => {
-            alert('Пароль скопирован в буфер обмена!');
+            alert('Parool kopeeritakse lõikelauale!');
         })
         .catch(err => {
-            alert('Ошибка копирования: ' + err);
+            alert('Kopeerimisviga: ' + err);
         });
 }
 
 // Event listeners for buttons
+
+//
 document.getElementById('generate-btn').addEventListener('click', function() {
     const passwordLength = parseInt(document.getElementById('password-length').value);
     const useNumbers = document.getElementById('use-numbers').checked;
