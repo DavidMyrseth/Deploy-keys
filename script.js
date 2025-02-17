@@ -51,7 +51,7 @@ document.getElementById('generate-btn').addEventListener('click', function() {
     const useSpecialChars = document.getElementById('use-special-symbols').checked;
 
     if (passwordLength < 6 || passwordLength > 120) {
-        alert('Длина пароля должна быть от 6 до 120 символов!');
+        alert('Salasõna pikkus peaks olema vahemikus 6 kuni 120 tähemärki.!');
         return;
     }
 
