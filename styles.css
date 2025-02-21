@@ -1,0 +1,44 @@
+body{
+    background-color: #92df88;
+}
+.main-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: #92df88;
+
+
+}
+.container{
+    padding:20px;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span, label {
+    font-weight: bold;
+    font-size:25px;
+
+}
+.container div {
+    padding:10px;
+}
+button{
+    background-color: #59cac8;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size:15px;
+}
+#password-length{
+    border: 1px solid #47ff00;
+    border-radius: 5px;
+}
